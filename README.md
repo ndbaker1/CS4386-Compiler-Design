@@ -1,14 +1,17 @@
+# CS4386-Compiler-Design-Project
+
 Nicholas Baker
 CS 4386.001
-10/31/2020
 
-_Project Assignment 3_
+Full Semester Long Project to Design a Basic Compiler in **Java** with JFlex and Cup
 
-=> Full execution: 'make all'
+## Running
+> All files in the **testfiles** directory are used for the make tests.
 
-'make all' will run the build all files and run the program on '.as' files inside the './testfiles' folder.
-  (which currently includes the provided test files)
+`make lexerTests` prints tokens lexed by the compiler
 
-The results will be stored in 'typeCheckingTestOutputs.txt', and also printed to the screen.
+`make parserTests` prints the code back in the structure as it was parsed into an AST
 
-'typeCheckingTestOutputs.result' conatins the results I get from my output.
+`make typeCheckingTests` prints the parser results plus the result of typechecking the AST
+
+`make interpreterTests` -- can be implimented later, or in favor of a code generation algorithm
