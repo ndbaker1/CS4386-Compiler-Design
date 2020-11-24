@@ -53,52 +53,53 @@ Full Semester Long Project to Design a Basic Compiler in **Java** with JFlex and
   - int → bool (0 → false, !0 → true)
   - int → float
 - String
-  - All types can be coerced to string with the exception of arrays
-- Operators
-  - = (assignment)
-    - Left hand side type MUST equal Right hand side type (requires expr eval) (coercion is allowed)
-  - X() (function)
-    - The type of the function when used in an expression is its return type
-    - Number of arguments used in call must match number used in definition
-      - Each argument in call must have type corresponding to the type in the method definition (coercion is allowed)
-  - if()
-    - Condition must be a bool(or coercible to bool)
-  - while()
-    - Condition must be a bool(or coercible to bool)
-  - "++"
-    - Variable must be int or float (can’t be final)
-  - "--"
-    - Variable must be int or float (can’t be final)
-  - X[Y] (array access)
-    - Y must be an int
-  - "+"
-    - May be used on int or float, produces int or float respectively
-  - "-"
-    - May be used on int or float, produces int or float respectively
-  - "~"
-    - Used on bool (or coercible to bool), produces bool
-  - " + - * / "
-    - Int X int
-      - Produces int
-    - Int X float (float X int)
-      - Produces float
-    - Float X float
-      - Produces float
-  - “String lit” + “String lit”
-    - "+" can concatenate 2 strings
-  - < > <= >= == <>
-    - Compare a combination of int, float
-    - Produces a bool
-  - || &&
-    - Compare two bools (or coercible to bool)
-    - Produces bool
-  - X ? Y : Z
-    - X must be a bool or coercible to bool
-    - Type of Y must equal type of Z
-  - Read
-    - Does not work on final
-    - Does not work on an array(non-dereferenced)
-    - Does not work on a function
-  - Print
-    - Does not work on an array(non-dereferenced)
-    - Does not work on any void type
+  - All types can be coerced to string with the exception of arrays  
+  
+**Operators**  
+- = (assignment)
+  - Left hand side type MUST equal Right hand side type (requires expr eval) (coercion is allowed)
+- X() (function)
+  - The type of the function when used in an expression is its return type
+  - Number of arguments used in call must match number used in definition
+    - Each argument in call must have type corresponding to the type in the method definition (coercion is allowed)
+- if()
+  - Condition must be a bool(or coercible to bool)
+- while()
+  - Condition must be a bool(or coercible to bool)
+- "++"
+  - Variable must be int or float (can’t be final)
+- "--"
+  - Variable must be int or float (can’t be final)
+- X[Y] (array access)
+  - Y must be an int
+- "+"
+  - May be used on int or float, produces int or float respectively
+- "-"
+  - May be used on int or float, produces int or float respectively
+- "~"
+  - Used on bool (or coercible to bool), produces bool
+- " + - * / "
+  - Int X int
+    - Produces int
+  - Int X float (float X int)
+    - Produces float
+  - Float X float
+    - Produces float
+- “String lit” + “String lit”
+  - "+" can concatenate 2 strings
+- < > <= >= == <>
+  - Compare a combination of int, float
+  - Produces a bool
+- || &&
+  - Compare two bools (or coercible to bool)
+  - Produces bool
+- X ? Y : Z
+  - X must be a bool or coercible to bool
+  - Type of Y must equal type of Z
+- Read
+  - Does not work on final
+  - Does not work on an array(non-dereferenced)
+  - Does not work on a function
+- Print
+  - Does not work on an array(non-dereferenced)
+  - Does not work on any void type
