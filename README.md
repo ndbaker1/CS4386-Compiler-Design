@@ -100,5 +100,5 @@ Full Semester Long Project to Design a Basic Compiler in **Java** with JFlex and
     - Does not work on an array(non-dereferenced)
     - Does not work on a function
   - Print
-   - Does not work on an array(non-dereferenced)
-   - Does not work on any void type
+    - Does not work on an array(non-dereferenced)
+    - Does not work on any void type
